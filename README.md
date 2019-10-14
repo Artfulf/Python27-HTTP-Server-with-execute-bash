@@ -46,7 +46,7 @@ Your HTTP Server now running on `localhost`, port: `8000`
 1. Open a browser to the http://localhost:8000/run_bash_script.py
 
 **Result**: 
-In scipts ***%ROOT_PATH%tmp/*** folder you can see file `test2.txt`. It`s file is a copy of test.txt.
+In scipts ***%ROOT_PATH%/tmp/*** folder you can see file `test2.txt`. It`s file is a copy of test.txt.
 1. You can **POST** any params to your script.
 For example:
 ```bash
