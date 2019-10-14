@@ -11,7 +11,7 @@ import re
 import logging
 from subprocess import CalledProcessError
 
-logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.INFO)
+logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.WARNING)
 
 arguments = cgi.FieldStorage()
 
@@ -28,7 +28,7 @@ else:
 
 pattern = re.compile("^\/?([A-z0-9-_+]+\/)*([A-z0-9]+\.(\w{0,4}))$")
 for p in params:
-    if !pattern.match(string):
+    if not pattern.match(string):
         logging.warning("%s not match as file path" % p)
         params = []
         break
